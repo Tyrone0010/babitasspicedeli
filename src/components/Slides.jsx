@@ -21,24 +21,22 @@ const Slides = (props) => {
         <img src={slider1} alt="" />
         <Carousel.Caption className="overlay-background">
           <h1><strong>Welcome To <br/> Babita's Spice Deli</strong></h1>
-          <h5 className="m-b-40">Coming soon!</h5>
-          <h6 className="m-b-40">Hopefully by 13th November 2020... Probably 20th November 2020</h6>
+          {/* <h5 className="m-b-40">Coming soon!</h5> */}
         </Carousel.Caption>      
       </Carousel.Item>
       <Carousel.Item >
         <img src={slider2} alt="" />
         <Carousel.Caption>
           <h1><strong>Welcome To <br/> Babita's Spice Deli</strong></h1>
-          <h5 className="m-b-40">Coming soon!</h5>
-          <h6 className="m-b-40">Hopefully by 13th November 2020... Probably 20th November 2020</h6>
+          {/* <h5 className="m-b-40">Coming soon!</h5> */}
         </Carousel.Caption>      
       </Carousel.Item>
       <Carousel.Item > 
         <img src={slider3} alt="" />
         <Carousel.Caption>
           <h1><strong>Welcome To <br/> Babita's Spice Deli</strong></h1>
-          <h5 className="m-b-40">Coming soon!</h5>
-          <h6 className="m-b-40">Hopefully by 13th November 2020... Probably 20th November 2020</h6>
+          {/* <h5 className="m-b-40">Coming soon!</h5> */}
+          {/* <h6 className="m-b-40">Hopefully by 13th November 2020... Probably 20th November 2020</h6> */}
         </Carousel.Caption>      
       </Carousel.Item>
     </Carousel>

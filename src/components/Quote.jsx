@@ -7,9 +7,9 @@ return(
 			<div className="row">
 				<div className="col-md-8 ml-auto mr-auto text-left">
 					<p className="lead ">
-						" 'Curry powder' is a British invention. There is no such thing as Indian food, Kip. But there are Indian methods... "
+						"Why not try something different at Babita's spice deli..."
 					</p>
-					<span className="lead">Jaspreet Singh</span>
+					<span className="lead">Babita Verma</span>
 				</div>
 			</div>
 		</div>

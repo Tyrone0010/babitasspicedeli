@@ -199,12 +199,11 @@ button:focus{
 	background: var(--color-green-200);
 	color: var(--color-white);
 }
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+.top-navbar .navbar-light .navbar-nav .nav-item .active .nav-link{
 	background: var(--color-green-200);
 	color: var(--color-white);
 	border-radius: 4px;
 }
-
 .navbar-expand-lg .navbar-nav .dropdown-menu{
 	border: none;
 	 box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
@@ -802,6 +801,14 @@ button:focus{
 .page-breadcrumb {
     padding: 250px 0 150px;
     background: url(../images/all-fruit.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+}
+.page-menu-breadcrumb {
+    padding: 250px 0 150px;
+    background: url(../images/pexels-chan-walrus.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 0 0;

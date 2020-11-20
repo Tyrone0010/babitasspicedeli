@@ -1,18 +1,14 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/Babitas-logo.png';
-import { push } from 'connected-react-router';
 
 const Header = (props) => {
-  const dispatch = useDispatch();
-  const activeName = location.pathname;
-  debugger;
-  const handlePageChange = (page) => {
+  const [activeLink, setActiveLink] = useState('/');
+  const setActiveLinkCallback = useCallback((link) => {
+    setActiveLink(link);
     debugger;
-    dispatch(push(page));
-  }
-
+  }, [activeLink, setActiveLink]);
+debugger;
   return (
 	  <header className="top-navbar">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,21 +20,26 @@ const Header = (props) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbars-rs-food">
+          {/* <Nav className="navbar-nav ml-auto">
+            <Nav.Item>
+                <NavLink className="nav-link" to="/">Home</NavLink>
+            </Nav.Item>
+            <Nav.Item>
+                <NavLink className="nav-link" to="/menu">Menu</NavLink>
+            </Nav.Item>
+            <Nav.Item>
+                <NavLink className="nav-link" to="/about">About</NavLink>
+            </Nav.Item>
+          </Nav> */}
             <ul className="navbar-nav ml-auto">
-              <li 
-                className={`nav-item${activeName === '/' ? ' active': undefined}`}
-                onClick={() => handlePageChange('/')}
-              >
-                <Link className="nav-link" to="/home">Home</Link>
+              <li className={`nav-item${activeLink === '/' ? ' active': undefined}`}>
+                <Link className="nav-link" to="/" onClick={() => setActiveLinkCallback('/')}>Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/menu">Menu</Link>
+              <li className={`nav-item${activeLink === '/menu' ? ' active': undefined}`}>
+                <Link className="nav-link" to="/menu" onClick={() => setActiveLinkCallback('/menu')}>Menu</Link>
               </li>
-              <li 
-                className={`nav-item${activeName === '/about' ? ' active': undefined}`}
-                onClick={() => handlePageChange('/about')}
-              >
-                <Link className="nav-link" to="/about">About</Link>
+              <li className={`nav-item${activeLink === '/about' ? ' active': undefined}`}>
+                <Link className="nav-link" to="/about" onClick={() => setActiveLinkCallback('/about')}>About</Link>
               </li>
             </ul>
           </div>

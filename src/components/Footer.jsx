@@ -7,19 +7,20 @@ const Footer = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6">
-              <h3>About Us</h3>
-              <p>We are Babita and Rana the owners of Babita's Spice Deli.  Our small business began in 2015 and was born after our own search to find Indian street food dishes in Swansea that reminded us of our childhood dishes eaten growing us.</p>
+              <h3>Delivery Information</h3>
+              <p>Collection is free, delivery is £3/£4 dependant on area.</p>
             </div>
             <div className="col-lg-4 col-md-6">
               <h3>Ordering hours</h3>
               <p><span className="text-color">Mon-Thu: </span>Closed</p>
-              <p><span className="text-color">Fri-Sun :</span> 5:PM - 10PM</p>
+              <p><span className="text-color">Fri-Sun :</span> 5:00 PM - 9:00 PM</p>
+              <p><span className="text-color">Prebooking is necessary</span></p>
             </div>
             <div className="col-lg-4 col-md-6">
               <h3>Contact information</h3>
               <p className="lead">Swansea, Wales</p>
-              <p className="lead"><a href="#">++44 </a></p>
-              <p><a href="#"> sales@babitasspricedeli.co.uk</a></p>
+              <p className="lead"><a href="#">07726 904300</a></p>
+              <p><a href="#"> sales@babitasspicedeli.co.uk</a></p>
             </div>
           </div>
         </div>
